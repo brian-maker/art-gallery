@@ -61,4 +61,4 @@ Distributed under the MIT License. See LICENSE for more information.
 Contact
 Brian Maker - briankipkoech04@gmail.com
 
-Project Link: #under build
+Project Link: https://art-gallery04.netlify.app/
