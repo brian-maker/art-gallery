@@ -2,7 +2,7 @@ import React from 'react'
 import logoLight from '../assets/logo-light.svg'
 function Footer() {
   return (
-    <footer className='bg-black text-white'>
+    <footer className='bg-black text-white md:pb-[5rem]'>
         <div className='py-10 mx-6 grid md:grid-cols-4 md:py-10 md:gap-6 lg:max-w-[900px] lg:mx-auto xl:max-w-[1178px]'>
             <div className='flex justify-start items-baseline'>
                 <img src={logoLight} alt="light logo" className='w-[10rem] pb-6 md:pb-0 md:pt-[10px]' />
