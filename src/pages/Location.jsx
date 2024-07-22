@@ -8,11 +8,12 @@ import { useNavigate } from 'react-router-dom';
 
 
 function Location() {
-  const navigate = useNavigate();
+    const navigate = useNavigate();
 
-  const handleNavigate = () =>{
-    navigate('/home')
-  }
+    const handleNavigate = () => {
+    navigate('/home');
+    };
+
   return (
     <div>
         <a onClick={handleNavigate} className='w-[13rem] items-center text-white overflow-hidden grid grid-cols-5 font-bigShoulders border-none cursor-pointer font-extrabold absolute z-10 left-14 top-3'>

@@ -87,7 +87,7 @@ function Cta() {
                 <img
                 data-aos="zoom-in"
                 data-aos-duration="1500"
-                data-aos-delay="600"
+                data-aos-delay="200"
                 data-aos-easing="ease-in-out"
                 src={imageMobile3}
                 srcSet={`${imageMobile3ax2} 2x`} alt="image of the arts availbale" loading="eager"

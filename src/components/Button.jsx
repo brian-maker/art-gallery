@@ -7,9 +7,9 @@ import { useNavigate } from 'react-router-dom';
 function Button() {
     const navigate = useNavigate();
 
-    const handleNavigate = () =>{
-    navigate('/location')
-    }
+    const handleNavigate = () => {
+    navigate('/location');
+    };
     return (
     <div>
         <motion.a

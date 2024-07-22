@@ -15,16 +15,13 @@ function App() {
     return () => clearTimeout(timer)
   })
   return (
-    <Router className='min-h-screen overflow-hidden min-w-[300px]'>
-      {
-        loading ? ( <LoadingSpinner/>):(
-        <Routes>
-          <Route path='/Home' element={<Home/>}/>
-          <Route path='/Location' element={<Location/>}/>
-        </Routes>
-        )
-      }
-      
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/location" element={<Location />} />
+      </Routes>
+
     </Router>
   )
 }
