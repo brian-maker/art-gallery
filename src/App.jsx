@@ -7,20 +7,25 @@ import LoadingSpinner from './components/LoadingSpinner'
 function App() {
   const [loading, setLoading] = useState(true);
 
-  useEffect(()=>{
-    const timer = setTimeout(()=>{
-      setLoading(false)
-    }, 3000)
+  useEffect(() => {
+    const handleLoad = () => {
+      setLoading(false);
+    };
 
-    return () => clearTimeout(timer)
-  })
+    window.addEventListener('load', handleLoad);
+
+    return () => window.removeEventListener('load', handleLoad);
+  }, []);
   return (
     <Router>
-      <Routes>
+      {loading ? (<LoadingSpinner/>):(
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/location" element={<Location />} />
       </Routes>
+      )}
+      
 
     </Router>
   )
